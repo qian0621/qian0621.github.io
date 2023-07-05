@@ -1,0 +1,15 @@
+/* #welcome {
+    min-height: 20rem;
+} */
+.img-contpair {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.portrait {
+    width: 14em;
+    height: 14em;
+    object-fit: scale-down;
+}
