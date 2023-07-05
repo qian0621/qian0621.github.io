@@ -1,6 +1,19 @@
+header > nav {
+    background-color: #6610f2;
+}
+
+footer {
+    background-color: #520ec1;
+}
+
+footer * {
+    color: #ebebeb;
+}
+
 /* #welcome {
     min-height: 20rem;
 } */
+
 .img-contpair {
     max-height: 100%;
     max-width: 100%;
@@ -13,3 +26,26 @@
     height: 14em;
     object-fit: scale-down;
 }
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-github {
+    background: #55ACEE;
+    color: white;
+}
+  
