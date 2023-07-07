@@ -37,13 +37,13 @@
                         <ul class="navbar-nav">
 
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#welcome">Home</a>
+                                <a class="nav-link" href="/#welcome">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
+                                <a class="nav-link" href="/#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="resume.html">Resume</a>
+                                <a class="nav-link active" aria-current="page" href="resume.html">Resume</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact Me</a>
@@ -55,32 +55,13 @@
             </nav>
         </header>
         
-        <main>
-            <div id="welcome" class="row g-5 p-5 bg-black">
-                <div class="col-md h-100">
-                    <img src="src/Me.jpeg" class="rounded-circle img-contpair portrait mx-auto" alt="Qian Ning">
-                </div>
-                <div class="col-md order-md-first">
-                    <h1 class="mb-4">
-                        Hi, My Name is Ker Qian Ning<br>
-                        Welcome to my Porfolio!
-                    </h1>
-                    <a href="#about" class="btn btn-primary">About Me</a>
-                </div>
-            </div>
-
-            <div id="about" class="p-5 bg-info-subtle">
-                <h2>About Me</h2>
-                <p>
-                    As a recent graduate with an IT diploma, I have experience in both web and app development. On the front end, I've worked with HTML, CSS, Bootstrap, JavaScript, jQuery, and React.js. For backend development, I've utilized Node.js and Flask, and I've also developed an iOS app using Swift.
-                    <br>
-                    I am dedicated to staying updated with the latest industry technologies and trends while continuously enhancing my skillset. If you're seeking a committed developer who is eager to learn, you are looking at the right choice to bring your ideas to life. Let's collaborate and make it happen!
-                </p>
-                <button class="btn btn-primary mr-5">Resume</button>
-                <button class="btn btn-primary">Projects</button>
-            </div>
-
+        <main class="p-5">
+            <h1 class="mainheader">My Resume</h1>
+            <iframe id="resumeViewer" src="src/resume.pdf" width="100%" height="500" title="Resume"></iframe>
+            <script src="resumeView.js"></script>
+            <!-- <p>Unable to display resume. <a href="src/resume.pdf">Download</a> instead.</p> -->
         </main>
+
         <footer class="p-5" id="contact">
             <h4>Contact</h4>
             <address>

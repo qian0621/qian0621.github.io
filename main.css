@@ -21,15 +21,20 @@ footer * {
     width: auto;
 }
 
+.mainheader {
+	border-bottom: 1px solid grey;
+	margin-bottom: 0.5em;
+}
+
 .portrait {
-    width: 14em;
-    height: 14em;
+    width: 10em;
+    height: 10em;
     object-fit: scale-down;
 }
 
 .fa {
-    padding: 10px;
-    font-size: 20px;
+    padding: 8px;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
     border-radius: 100%;
