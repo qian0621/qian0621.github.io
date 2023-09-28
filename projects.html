@@ -209,14 +209,33 @@
         </main>
 
         <footer class="py-5 px-3 px-sm-5" id="contact">
-            <h4>Contact</h4>
-            <address>
-                Phone: <span itemprop="telephone"><a href="tel:+6587746872">+65 8774 6872</a></span><br>
-                Email: <a href="mailto:kerqianning2005@gmail.com">kerqianning2005@gmail.com</a>
-            </address>
-            <div class="hstack gap-3 mb-3">
-                <a href="https://www.linkedin.com/in/qian-ning-ker-968008239/" class="fa fa-linkedin"></a>
-                <a href="https://github.com/qian0621" class="fa fa-github"></a>
+            <div class="row g-sm-2">
+                <div class="col-sm">
+                    <h4>Contact me</h4>
+                    <address>
+                        Phone: <span itemprop="telephone"><a href="tel:+6587746872">+65 8774 6872</a></span><br>
+                        Email: <a href="mailto:kerqianning2005@gmail.com">kerqianning2005@gmail.com</a>
+                    </address>
+                    <div class="hstack gap-3 round-button-links mb-3">
+                        <a href="https://www.linkedin.com/in/qian-ning-ker-968008239/" class="fa fa-linkedin"></a>
+                        <a href="https://github.com/qian0621" class="fa fa-github"></a>
+                    </div>
+                </div>
+                <form action="mailto:kerqianning2005@gmail.com" class="col-sm d-flex flex-column justify-content-evenly gap-1" id="contact_form">
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" value="Contact me">
+                    </div>
+                    <div>
+                        <label for="content">Content</label>
+                        <textarea class="form-control" id="content" name="body" rows="2"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary align-self-end">
+                        Send
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                </form>
+                <script src="intercept_contact_form_submission.js"></script>
             </div>
             <small>&copy; 2023 by Ker Qian Ning</small>
         </footer>
