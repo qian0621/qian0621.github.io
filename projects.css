@@ -1,0 +1,29 @@
+.projects > div.card {
+    padding: 0;
+}
+
+/* bootstrap md breakpoint */
+@media (min-width: 768px) { 
+
+    .projects > div.card > div.card-main {
+        display: flex;
+        /* overflow: hidden; */
+    }
+    
+    .projects > div.card > div.card-main > img.card-img {
+        object-fit: scale-down;
+        width: auto;
+        width: 50%;
+        flex-basis: 0;
+        flex-shrink: 1;
+        flex-grow: 0;
+    }
+
+    .projects > div.card > div.card-main > img.card-body {
+        flex-shrink: 0;
+        min-width: min-content;
+        flex-basis: fit-content;
+        flex-grow: 1;
+    }
+    /**/
+} 
