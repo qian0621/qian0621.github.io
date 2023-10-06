@@ -1,5 +1,6 @@
 .projects > div.card {
     padding: 0;
+    /* override bootstrap row > * padding css */
 }
 
 /* bootstrap md breakpoint */
@@ -25,5 +26,4 @@
         flex-basis: fit-content;
         flex-grow: 1;
     }
-    /**/
 } 
