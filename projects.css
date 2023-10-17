@@ -1,20 +1,31 @@
 .projects > div.card {
-    padding: 0;
     /* override bootstrap row > * padding css */
+    padding: 0;
 }
 
-/* bootstrap md breakpoint */
+/* .projects > div.card > div.card-main {
+    height: auto;
+} */
+
+.projects > div.card > div.card-main > img.card-img {
+    object-fit: scale-down;
+}
+
+/* bootstrap md breakpoint
+screen size or bigger */
 @media (min-width: 768px) { 
 
     .projects > div.card > div.card-main {
         display: flex;
+        column-gap: 1rem;
         /* overflow: hidden; */
     }
     
     .projects > div.card > div.card-main > img.card-img {
-        object-fit: scale-down;
-        width: auto;
-        width: 50%;
+        /* top-left top-right bottom-right bottom-left */
+        border-radius: 5px 0 0 5px;
+        /* dont know why flex-basis isnt overriding bootstrap's .card-img width 100% */
+        max-width: 45%;
         flex-basis: 0;
         flex-shrink: 1;
         flex-grow: 0;
@@ -27,3 +38,12 @@
         flex-grow: 1;
     }
 } 
+
+/* screen size or smaller */
+@media (max-width: 767.98px) {
+    .projects > div.card > div.card-main > img.card-img {
+        max-height: 50%;
+        /* top-left top-right bottom-right bottom-left */
+        border-radius: 5px 5px 0 0;
+    }
+}
