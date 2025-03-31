@@ -1,3 +1,47 @@
+menu {
+    list-style: none;
+    padding: 0;
+}
+
+a.plain {
+    --color: lightblue;
+    color: var(--color);
+    text-decoration: none;
+    position: relative
+}
+
+a.plain::after, a.plain::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    margin-top: -0.08em;
+    height: 0.08em;
+    background-color: var(--color);
+    transition-duration: 0.5s;
+    transition-property: width;
+}
+
+a.plain::after {
+    right: 0;
+    width: 100%;
+    transition-delay: 0.1s;
+}
+
+a.plain:hover::after {
+    width: 0;
+    transition-delay: 0s;
+}
+
+a.plain::before {
+    left: 0;
+    width: 0;
+}
+
+a.plain:hover::before {
+    width: 100%;
+    transition-delay: 0.1s;
+}
+
 header > nav {
     background-color: #6610f2;
 }
@@ -22,16 +66,20 @@ footer {
     object-fit: scale-down;
 }
 
-.round-button-links > * {
-    padding: 8px;
+.round-button-links a {
+    padding: 0.5em;
+    width: 2em;
+    height: 2em;
     font-size: 18px;
     text-align: center;
     text-decoration: none;
     border-radius: 100%;
+    transition: box-shadow 0.1s;
 }
 
-.round-button-link > *:hover {
-    opacity: 0.7;
+.round-button-links a:hover {
+    box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.3)
+                ,inset 0 -1px 3px rgba(255, 255, 255, 0.3);
 }
 
 .fa-linkedin {
@@ -40,7 +88,7 @@ footer {
 }
 
 .fa-github {
-    background: #55ACEE;
+    background: #007728;
     color: white;
 }
   
